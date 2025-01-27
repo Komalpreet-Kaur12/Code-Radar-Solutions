@@ -6,7 +6,6 @@ int main() {
     char hobby[8];
     scanf("%s",name);
     scanf("%d",&age);
-    gets char();
     scanf("%[^\n]",hobby);
     printf("Name: %s\n",name);
     printf("Age: %d\n",age);
