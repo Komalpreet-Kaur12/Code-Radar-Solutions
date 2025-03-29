@@ -4,20 +4,24 @@ int main() {
     scanf("%d",&n);
     int nst=1;
     int nsp=n-1;
+    int ml = n/2 +1;
     for(int i=1;i<=n;i++){
-        for(int k=1;k<=nsp;k++){
+        for(j=1;j<=nsp;j++){
             printf(" ");
         }
-        nsp-=1;
-        for(int j=1;j<=nst;j++){
+        for(k=1;k<=nst;k++){
             printf("*");
         }
-        nst+=2;
-        for(int k=1;k<=nsp;k++){
-            printf(" ");
+        if(i<ml){
+            nsp--;
+            nst+=2;
         }
-        nsp+=1;
-        printf("\n");
+        else{
+            nsp++;
+            nst-=2;
+        }
+
+        printf("\n";)
     }
     return 0;
 }
